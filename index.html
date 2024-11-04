@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Omnifood is a premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible.">
+        
+        <title>Sam's Pet Shop</title>
+        <link rel="stylesheet" type="text/css"href="Resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicon.min.css">
+        <link href="pidie-0.0.8.css" rel="stylesheet">
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"  rel="stylesheet"  type='text/css'>  
+    </head>
+    
+    <body>
+        <!-- [[ navbar ]] -->
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <div class="search-bar">
+                    <form action="/acion_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </ul>
+        </nav>
+        <!-- [[ header ]] -->
+        <header class="bunny-header" id="home">
+            <div class="store-name">
+                <h1>Sammy's Pet Shop<i class="fa fa-paw" aria-hidden="true"></i></h1>
+                <h3>1300 Belvark Blvd, Greendale, CA 88000</h3>
+                <a class="btn btn-full" href="#">Register</a>
+                <a class="btn btn-ghost" href="#">Order Now</a>
+            </div>
+        </header>
+        <!-- [[ about Section ]] -->
+        <section class="section-about" id="about">
+            <div class="row">
+                <h1 class="about_intro">Who we are <br> &mdash; </h1>
+            </div>
+            <div class="about-image">
+                <img class="slide" src="resources/css/img/cat.jpg" alt="slide image 2">
+                <img class="slide" src="resources/css/img/dog.jpg" alt="slide image 3">
+                <img class="slide" src="resources/css/img/parrot.jpg" alt="slide image 4">                
+            </div>
+            <div class="row">
+                <p class="main-p">
+                    Hello, we're Sammy's, a local mom and pop pet shop and animal center.
+                    We provide customers with the best pets in the whole neighborhood. We 
+                    have a few services that are listed below.
+                </p>
+            </div>
+            <div class="row" id="about-text">
+                <div class="col span-1-of-4">
+                    <ion-icon name="heart-empty" class="icon-about"></ion-icon>
+                    <h3>Grooming Services</h3>
+                    <p class="about-p">
+                        We have excellent cleaning facilities to groom your pets.
+                        Our cleaning staff are trained specialist in grooming.
+                    </p>
+                </div>
+                <div class="col span-1-of-4">
+                    <ion-icon name="business" class="icon-about"></ion-icon>
+                    <h3>Animal Shelter</h3>
+                    <p class="about-p">
+                        Sammy's pet shop also functions as an animal shelter.
+                        We take in homeless pets and take care of them until they
+                        find a new owner. We have a strong no-kill policy.
+                    </p>
+                </div>
+                <div class="col span-1-of-4">
+                    <ion-icon name="globe" class="icon-about"></ion-icon>
+                    <h3>Excellent Variety</h3>
+                    <p class="about-p">
+                        We have an excellent selection of pets from all over 
+                        the world, anything from a local house cat to an 
+                        exotic parrot.
+                    </p>
+                </div>
+                <div class="col span-1-of-4">
+                    <ion-icon name="appstore" class="icon-about"></ion-icon>
+                    <h3>Online Services</h3>
+                    <p class="about-p">
+                        Order pets online! All users who are subscribed to
+                        our website will get a daily updaetes on our best 
+                        prices. 
+                    </p>
+                </div>
+            </div>
+            <div class="about-schedule">
+                <div class="row">
+                    <h2></h2>
+                </div>
+            </div>
+        </section>
+        <!-- [[ testimonials]] -->
+        <section class="section-testimonials" id="testimonials">
+            <!-- Use quest slideshow -->
+            <div class="row testimonial-head">
+                <h1>Testimonials</h1>
+            </div>
+            <div class="row testimonial-sentence">
+                <h3>Our customers love us<br>&mdash;</h3>
+            </div>
+            <div class="pd-container">
+                <div class="pd-quotes">
+                    <div class="pd-quotes-slideshow">
+                        <div class="pd-quotes-slide">
+                            <img src="resources/css/img/bunnies.jpg">
+                            <p>
+                                <q>I bought my first pet here. I don't regret it.</q>    
+                            </p>
+                            <p class="pd-quotes-author">- Homer Simpson</p>
+                        </div>
+                        <div class="pd-quotes-slide">
+                            <img src="resources/css/img/bunnies2.jpg">
+                            <p>
+                                <q>I never see an unhappy animal in Sammy's.</q>    
+                            </p>
+                            <p class="pd-quotes-author">- Brian Griffin</p>
+                        </div>
+                        <div class="pd-quotes-slide">
+                            <img src="resources/css/img/chinchilla.jpg">
+                            <p>
+                                <q>Got the best grooming services at Sammy's.</q>    
+                            </p>
+                            <p class="pd-quotes-author">- Bugs Bunny</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- [[ contact ]] -->
+        <section class="section-contact" id="contact">
+             <div class="row">
+                <h1>Contact Us</h1>
+                <h2>We're happy to hear from you</h2>
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="name" placeholder="email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Drop us a line</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Send it!">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- [[ footer ]] -->
+        <footer>
+            <div class="row social-icons">
+                <ul>
+                    <li><a href="#" target="blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" target="blank"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#" target="blank"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="row footer-bottom">
+                <p>Designed by: <a href="#">CE</a></p>
+            </div>
+        </footer>
+        
+        <script src="Resources/js/script.js"></script>
+        <script src="pidie-0.0.8.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
+        <script>
+            var pidie = new Pidie();
+            pidie.quotesSlideshow();
+        </script>
+    </body>
+</html>

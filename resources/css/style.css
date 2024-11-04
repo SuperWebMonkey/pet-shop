@@ -1,0 +1,335 @@
+/* -------------------------------------------- */
+/* ==[ Setup ]== */
+/* -------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    background-color:#fff;
+    color: #555;
+    font-family: {"Times New Roman", "Georgia", "Serif";}
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display";
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1, 
+h2 {
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+/* -------------------------------------------- */
+/* ==[ Reusable ]== */
+/* -------------------------------------------- */
+
+
+/* -------------------------------------------- */
+/* ==[ navbar ]== */
+/* -------------------------------------------- */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #6de9f4;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #31a1a5;
+}
+
+.navbar .search-bar {
+    float: right;
+}
+
+.navbar input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.navbar .search-bar button {
+    float: right;
+    padding:; 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+}
+
+.navbar .search-bar button:hover {
+    background: #ccc;
+}
+
+/* -------------------------------------------- */
+/* ==[ header ]== */
+/* -------------------------------------------- */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/bunny.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.store-name {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 150%;
+    opacity: 1;
+    /* puts the text in the bottom left of the picture */
+    position: absolute;
+    width: 1100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    word-spacing: 3px;
+    color: #ebf7f7;
+    
+    animation-name: moveInLeft;
+    animation-duration: 5s;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+}
+
+.btn:hover,
+.btn:active {
+    
+}
+
+.btn-full {
+    background-color: #ecf0f1;
+    border: 1px solid #adffff;
+    color: #171616;
+}
+
+.btn-ghost {
+    border: 1px solid #ecf0f1;
+    color: #ecf0f1;
+}
+
+@keyframes moveInLeft {
+    
+    0% {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate(-200px);
+    }
+    
+}
+
+/* -------------------------------------------- */
+/* ==[ about ]== */
+/* -------------------------------------------- */
+.section-about h1 {
+    margin-top: 60px;
+    color: #3a5050;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-about .about-image {
+    max-width: 600px;
+    max-height: 450px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.slide {
+    width:100%;
+    margin-bottom: 30px;
+}
+
+#about-text {
+    margin-bottom: 40px; 
+}
+
+.main-p {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.about-p {
+    line-height: 145%;
+    padding: 1%;
+    font-size: 95%;
+}
+
+.icon-about {
+    font-size: 300%;
+    display: block;
+    color: #10ebeb;
+    margin-bottom: 10px;
+}
+
+.section-about .row::after {
+    margin-bottom: 20px;
+}
+
+/* -------------------------------------------- */
+/* ==[ Schedule ]== */
+/* -------------------------------------------- */
+
+/* -------------------------------------------- */
+/* ==[ Testimonials ]== */
+/* -------------------------------------------- */
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/pet-about.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+.testimonial-head {
+    padding: 20px 20px;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+}
+
+.testimonial-sentence h3 {
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+}
+
+/* -------------------------------------------- */
+/* ==[ Contact ]== */
+/* -------------------------------------------- */
+.section-contact {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {outline: none;};
+
+/* -------------------------------------------- */
+/* ==[ footer ]== */
+/* -------------------------------------------- */
+footer {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 20px 0px;
+    background: #32c8e3;
+}
+
+footer .social-icons {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+footer ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.social-icons ul li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+    border-radius: 100%;
+    background: #f0e3e3
+}
+
+.social-icons u li a {
+    color: #935050;
+    font-size: 25px;
+}
+
+.social-icons ul li a i {
+    line-height: 50px;
+}
+
+.footer-bottom {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+}
+
+.footer-bottom p {
+    font-family: arial;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.footer-bottom p a {
+    color: #fff;
+}
+
+.footer-bottom p a:hover {
+    color: #272727;
+}
